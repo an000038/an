@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Plant Palette</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre+ExtraBold:wght@400;800&family=Bentham:wght@400&family=Roboto:wght@300;400;500&family=RocknRoll+One:wght@400&family=Emblema+One:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Purple+Purse:wght@400&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Mobile menu checkbox for CSS-only functionality -->
+    <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox" hidden>
+
+    <div class="top-nav">
+        <div class="top-nav__row">
+            <div class="top-nav__logo">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="picture/logo-plant-palette (2) 1.jpg" sizes="30px">
+                    <source media="(max-width: 1366px)" srcset="picture/logo-plant-palette (2) 1.jpg" sizes="40px">
+                    <img src="picture/logo-plant-palette (2) 1.jpg" alt="Plant Palette Logo" sizes="45px">
+                </picture>
+            </div>
+            <div class="top-nav__buttons">
+                <button class="nav-btn nav-btn--help">Help</button>
+                <button class="nav-btn nav-btn--signup">Sign Up</button>
+                <div class="mobile-icons">
+                    <svg class="mobile-icon search-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                    <svg class="mobile-icon cart-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                    </svg>
+                    <label for="mobile-menu-toggle" class="mobile-icon menu-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                        </svg>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="top-nav__menu">
+            <div class="top-nav__menu-links">
+                <a href="index.html" class="menu-link">Home</a>
+                <a href="#menus" class="menu-link">Menus</a>
+                <a href="about.html" class="menu-link">About Us</a>
+                <a href="contact.html" class="menu-link">Contact Us</a>
+                <a href="#reservation" class="menu-link">Reservation</a>
+            </div>
+            <div class="top-nav__menu-icons">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                </svg>
+                <button class="nav-btn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav">
+            <div class="mobile-nav__header">
+                <label for="mobile-menu-toggle" class="mobile-nav__close">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                    </svg>
+                </label>
+            </div>
+            <div class="mobile-nav__menu">
+                <a href="index.html" class="mobile-nav__link">Home</a>
+                <a href="index.html#menus" class="mobile-nav__link">Menus</a>
+                <a href="about.html" class="mobile-nav__link">About Us</a>
+                <a href="contact.html" class="mobile-nav__link">Contact Us</a>
+                <a href="#reservation" class="mobile-nav__link">Reservation</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+
+        <section class="hero-section">
+            <div class="hero-image">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="picture/Frame 9.jpg" sizes="100vw">
+                    <source media="(max-width: 1366px)" srcset="picture/Frame 9.jpg" sizes="100vw">
+                    <img src="picture/Frame 9.jpg" alt="Contact Us" sizes="100vw" />
+                </picture>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="contact-info-section">
+            <div class="contact-info-container">
+                <div class="info-content">
+                    <div class="hours-section">
+                        <h2>Hours of Operation</h2>
+                        <div class="hours-details">
+                            <p><strong>Monday – Friday:</strong> 11:00 AM – 9:00 PM</p>
+                            <p><strong>Saturday – Sunday:</strong> 10:00 AM – 10:00 PM</p>
+                            <p><strong>Brunch served on weekends until 2:00 PM</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="location-section">
+                        <h2>Location</h2>
+                        <div class="location-details">
+                            <p><strong>Plant Palette Restaurant</strong></p>
+                            <p>123 Greenway Avenue</p>
+                            <p>Orléans, ON K1C 0X9</p>
+                            <p>Located in Orléans near the community garden</p>
+                            <p><strong>Phone:</strong> (613) 123-4567</p>
+                            <p><strong>Email:</strong> hello@plantpaletterestaurant.ca</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phone-image">
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="picture/Frame 11.png" sizes="80px">
+                        <source media="(max-width: 1366px)" srcset="picture/Frame 11.png" sizes="100px">
+                        <img src="picture/Frame 11.png" alt="Phone Handset" sizes="120px" />
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="accessibility-section">
+            <div class="accessibility-container">
+
+                <div class="accessibility-image">
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="picture/Frame 12.jpg" sizes="100vw">
+                        <source media="(max-width: 1366px)" srcset="picture/Frame 12.jpg" sizes="50vw">
+                        <img src="picture/Frame 12.jpg" alt="Wheelchair Accessible Parking" sizes="40vw" />
+                    </picture>
+                </div>
+
+                <div class="accessibility-content">
+                    <p>Our restaurant is wheelchair accessible, with gender-inclusive washrooms and clearly marked allergen info on all menus. If you require any special accommodations, please let us know ahead of your visit—we're happy to help.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-section">
+            <div class="social-container">
+
+                <div class="social-content">
+                    <h2>Stay up to date with seasonal specials, upcoming events, and stories from our kitchen:</h2>
+                    <ul class="social-links">
+                        <li>Instagram: @plantpalette</li>
+                        <li>Facebook: PLANT PALETTE RES</li>
+                        <li>Newsletter Signup: Subscribe here</li>
+                    </ul>
+                </div>
+
+                <div class="social-image">
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="picture/Frame 14.jpg" sizes="100vw">
+                        <source media="(max-width: 1366px)" srcset="picture/Frame 14.jpg" sizes="50vw">
+                        <img src="picture/Frame 14.jpg" alt="Social Media Icons Stack" sizes="40vw" />
+                    </picture>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__column">
+                <h3 class="footer__title">Menus</h3>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Seasonal Menu</a></li>
+                    <li><a href="#" class="footer__link">Catering & Events Menu</a></li>
+                    <li><a href="#" class="footer__link">Gluten-Free Options</a></li>
+                    <li><a href="#" class="footer__link">Kids Menu</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__column">
+                <h3 class="footer__title">About Us</h3>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Our History</a></li>
+                    <li><a href="#" class="footer__link">Meet Our Farmers</a></li>
+                    <li><a href="#" class="footer__link">Sustainability Commitment</a></li>
+                    <li><a href="#" class="footer__link">Community Involvement</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__column">
+                <h3 class="footer__title">Contact Us</h3>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Visit Us</a></li>
+                    <li><a href="#" class="footer__link">Careers</a></li>
+                    <li><a href="#" class="footer__link">Media & Partnerships</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__column">
+                <h3 class="footer__title">Reservation</h3>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">Book a Table</a></li>
+                    <li><a href="#" class="footer__link">Private Events</a></li>
+                    <li><a href="#" class="footer__link">Catering Inquiry</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__copyright">
+                <p>© 2025 Plant Palette. All rights reserved.</p>
+                <p>Serving delicious, ethical food—one plate at a time.</p>
+            </div>
+            <div class="footer__actions">
+                <a href="#" class="btn btn--back-to-top">Back to top</a>
+                <div class="footer__logo">PLANT PALETTE</div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
